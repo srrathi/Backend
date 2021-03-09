@@ -62,3 +62,19 @@ Open the `codetrophs` directory in your code editor of choice and edit files und
 5: Create a PR.
 
 ### **[WORKFLOW](https://github.com/CodeTrophs/Backend/wiki)**
+
+## ❤️ Project Admin
+
+<table>
+	<tr>
+		<td align="center">
+			<a href="https://github.com/aryasoni98">
+				<img src="public/images/aryasoni.jpg" width="100px" alt="" />
+				<br /> <sub><b>Arya Soni</b></sub>
+			</a>
+			<br /> <a href="https://github.com/aryasoni98">
+		👑 Admin
+	    </a>
+		</td>
+	</tr>
+</table>
