@@ -1,17 +1,26 @@
+<div align="center">
+
 # CodeTrophs
 
 Contributing to open source can be a rewarding way to learn, teach, and build experience in just about any skill you can imagine.
 
-<!-- <p align="center">
-   <a href="https://github.com/CodeTrophs/codetrophs/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/CodeTrophs/Backend"></a>
-   <a href="https://github.com/fnplus/footsteps-app/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/CodeTrophs/Backend"></a>
-   <a href="https://github.com/fnplus/footsteps-app/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/CodeTrophs/Backend"></a>
-</p> -->
+![Issues](https://img.shields.io/github/issues/CodeTrophs/Backend)
+![Pull Requests](https://img.shields.io/github/issues-pr/codetrophs/Backend)
+![Forks](https://img.shields.io/github/forks/CodeTrophs/Backend)
+![Stars](https://img.shields.io/github/stars/CodeTrophs/Backend)
+![License](https://img.shields.io/github/license/CodeTrophs/Backend)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+
+</div>
+
+### Before You Start READ [Wiki](https://github.com/CodeTrophs/Backend/wiki) Section
+### Setup local .env [Watch](https://drive.google.com/file/d/1MRBFO7VbAzefD1Rsd125B5b8ao-snuhV/view?usp=sharing)
+
+<br>
 
 ## 🚀 Quick start
 
@@ -61,7 +70,6 @@ Open the `codetrophs` directory in your code editor of choice and edit files und
 
 5: Create a PR.
 
-### **[WORKFLOW](https://github.com/CodeTrophs/Backend/wiki)**
 
 ## ❤️ Project Admin
 
