@@ -30,7 +30,9 @@ Open Source projects always have something to workon and improves with each new 
 ***
 You have forked the project you want to contribute to your github account. To get this project on your development machine we use clone command of git.
 
-```$ git clone https://github.com/<your-account-username>/<your-forked-project>.git```
+```
+$ git clone https://github.com/<your-account-username>/<your-forked-project>.git
+```
 Now you have the project on your local machine.
 
 ### ADD A REMOTE (UPSTREAM) TO ORIGINAL PROJECT REPOSITORY 
@@ -59,7 +61,9 @@ The last command pushes the latest code to your forked repository on Github. The
 ***
 Normally, all repositories have a master branch which is considered to remain stable and all new features should be made in a separate branch and after completion merged into master branch. So we should create a new branch for our feature or bugfix and start working on the issue.
 
-```$ git checkout -b <feature-branch>```
+```
+$ git checkout -b <feature-branch>
+```
 This will create a new branch out of master branch. Now start working on the problem and commit your changes.
 
 ```
@@ -82,14 +86,18 @@ Now you get the latest commits from other contributors and check that your commi
 ***
 You have completed the feature, but you have made a number of commits which make less sense. You should squash your commits to make good commits.
 
-```$ git rebase -i HEAD~5```
+```
+$ git rebase -i HEAD~5
+```
 This will open an editor which will allow you to squash the commits.
 
 ### PUSH CODE AND CREATE A PULL REQUEST -
 ***
 Till this point you have a new branch with the feature or bugfix you want in the project you had forked. Now push your new branch to your remote fork on github.
 
-```$ git push origin <feature-branch>```
+```
+$ git push origin <feature-branch>
+```
 Now you are ready to help the project by opening a pull request means you now tell the project managers to add the feature or bugfix to original repository. You can open a pull request by clicking on green icon -
 
 <p align="center">  <img  src="https://i.imgur.com/aGaqAD5.png">  </p>
