@@ -142,4 +142,15 @@ module.exports = {
 
     res.json(resp);
   }),
+
+  forkRepo: create(async (req, res) => {
+    const { owner, repo } = req.params;
+
+    const resp = await github.forkRepo(req.accessToken, {
+      owner,
+      repo,
+    });
+
+    res.json(resp);
+  }),
 };

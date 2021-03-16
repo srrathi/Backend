@@ -12,5 +12,6 @@ router.delete('/starred/:owner/:repo', authenticator(), controller.unstarRepo);
 router.get('/pulls/:owner/:repo', authenticator(), controller.getPullRequests);
 router.get('/issues/:owner/:repo', authenticator(), controller.getIssues);
 router.get('/starred', authenticator(), controller.getStarredRepos);
+router.post('/fork/:owner/:repo', authenticator(), controller.forkRepo);
 
 module.exports = router;
