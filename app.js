@@ -23,19 +23,19 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(helmet());
 
-//limit requests from same IP
+// limit requests from same IP
 const limiter = rateLimit({
   max: 100,
-  windowMs: 60*60*1000,
-  message: 'To many request from this IP, please try again after an hour!'
+  windowMs: 60 * 60 * 1000,
+  message: 'To many requests from this IP, please try again after an hour!',
 });
 
 app.use('/', limiter);
 
-//data sanitization against noSQL query injection
+// data sanitization against noSQL query injection
 app.use(mongoSanitize());
 
-//data sanitization against xss
+// data sanitization against xss
 app.use(xss());
 
 app.use(cors());
