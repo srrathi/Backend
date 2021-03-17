@@ -73,6 +73,7 @@ UserSchema.statics.getProfileFields = function () {
     'profileImage',
     'about',
     'title',
+    'oAuth.github.username',
     'role',
     'skills',
     'socials',
