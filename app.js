@@ -5,6 +5,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+const mongoSanitize = require('express-mongo-sanitize');
+const xss = require('xss-clean');
 const passport = require('passport');
 const logger = require('./src/utils/logger');
 const connectDB = require('./src/config/db');
@@ -19,6 +22,22 @@ const app = express();
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(helmet());
+
+// limit requests from same IP
+const limiter = rateLimit({
+  max: 100,
+  windowMs: 60 * 60 * 1000,
+  message: 'Too many requests from this IP, please try again after an hour!',
+});
+
+app.use('/', limiter);
+
+// data sanitization against noSQL query injection
+app.use(mongoSanitize());
+
+// data sanitization against xss
+app.use(xss());
+
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
