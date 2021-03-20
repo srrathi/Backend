@@ -203,4 +203,21 @@ module.exports = {
         reject(error);
       }
     }),
+
+  // eslint-disable-next-line object-curly-newline
+  forkRepo: async (accessToken, { owner, repo }) =>
+    new Promise(async (resolve, reject) => {
+      try {
+        const octokit = createOctokit(accessToken);
+
+        const resp = await octokit.request('POST /repos/{owner}/{repo}/forks', {
+          owner,
+          repo,
+        });
+
+        resolve({ data: resp.data });
+      } catch (error) {
+        reject(error);
+      }
+    }),
 };
