@@ -27,6 +27,10 @@ const config = {
     SECRET: getEnvVariable('JWT_SECRET'),
     EXPIRES_IN: getEnvVariable('JWT_EXPIRES_IN'),
   },
+  MAIL: {
+    USER: getEnvVariable('EMAIL_USER'),
+    PASSWORD: getEnvVariable('EMAIL_PASSWORD'),
+  },
   API_URL: getEnvVariable('API_URL'),
   FRONTEND_LOGIN_URL: getEnvVariable('FRONTEND_LOGIN_URL'),
 };
