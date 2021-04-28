@@ -1,6 +1,7 @@
 const passport = require('passport');
 const { Strategy } = require('passport-github');
 const User = require('../models/User');
+const email = require('../utils/email');
 const config = require('./index');
 
 passport.use(
@@ -45,6 +46,7 @@ passport.use(
               },
             },
           });
+          await email(userData.login, userData.email);
         }
 
         return cb(null, currentUser);
